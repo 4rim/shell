@@ -2,7 +2,7 @@ One-line commands, not full-blown scripts.
 For the lectures "shell tools"
 
 1.
-ls -ahclt --color=auto
+ls -ahcltr --color=auto
 
 -a = list all files, even if they're hidden
 -h = human readable
@@ -10,6 +10,7 @@ ls -ahclt --color=auto
 file status info) --color=status = status can be "never", "auto", or "always".
 "auto" and "always" both enables color, but "auto" only enables color if the
 output is to a terminal.
+-r = reverse sort
 
 2.
 find . -name "*.html" -type f | xargs tar -czvf archive.tar

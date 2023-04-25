@@ -18,7 +18,6 @@ get up and running
 - Starting today (Apr 25) I am going through MIT Csail's [Missing Semester](https://missing.csail.mit.edu/)
 and hope to be finished a week or so from now (May 2)
     - This requires me to put aside at _least_ an hour every day to go through a lecture
-- I want to write 2-3 bash scripts per week, preferably more if I can, either for use on my MacBook or my ThinkPad (which runs Linux)
 - All the scripts I write, even and especially the most rudimentary/pointless, will be uploaded here, as well as links to
 other helpful resources, and example scripts I've found online (with credits of course)
 

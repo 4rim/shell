@@ -8,7 +8,7 @@ to properly learning python yet...)
 in (systems, cybersecurity, networks)
 - I want to add interesting scripts to my Linux workstation (as of now I'm
 doing most of this on my MacBook, and its default shell is zsh)
-- I'm interested in branching out to BSD and other \*NIX likes
+- I'm interested in branching out to BSD and other \*NIX-likes
 - I want to be a more efficient programmer
 
 ## Plan
@@ -17,8 +17,9 @@ doing most of this on my MacBook, and its default shell is zsh)
 get up and running
 - Starting today (Apr 25) I am going through MIT Csail's [Missing Semester](https://missing.csail.mit.edu/)
 and hope to be finished a week or so from now (May 2)
+    - This requires me to put aside at _least_ an hour every day to go through a lecture
 - I want to write 2-3 bash scripts per week, preferably more if I can, either for use on my MacBook or my ThinkPad (which runs Linux)
-- All the scripts I write, even the most rudimentary/pointless, will be uploaded here, as well as links to
+- All the scripts I write, even and especially the most rudimentary/pointless, will be uploaded here, as well as links to
 other helpful resources, and example scripts I've found online (with credits of course)
 
 ## Set-up
@@ -30,6 +31,7 @@ _Kind of irrelevant, mainly for me to look back on_
     - shellcheck for static code checking
     - vim-airline 
     - vim fugitive for VCS
-- You can find my config file [here](https://github.com/4rim/dotfiles) if you're
+- You can find my vim config file [here](https://github.com/4rim/dotfiles) if you're
 curious
+- My ./zshrc is [here]() (though note all the scripts are meant to run in bash)
 

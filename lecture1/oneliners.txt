@@ -1,0 +1,32 @@
+One-line commands, not full-blown scripts.
+For the lectures "shell tools"
+
+1.
+ls -ahclt --color=auto
+
+-a = list all files, even if they're hidden
+-h = human readable
+-clt = "c" with "lt", sort by and show ctime (time of last modification with
+file status info) --color=status = status can be "never", "auto", or "always".
+"auto" and "always" both enables color, but "auto" only enables color if the
+output is to a terminal.
+
+2.
+find . -name "*.html" -type f | xargs tar -czvf archive.tar
+
+find is already recursive. you can define a depth using --max-depth and
+--min-depth though.
+
+-c = create or compress, not sure what it stands for. (its inverse is -x,
+meaning extract)
+-z = use the gzip compression algo
+-v = verbose (print out the files that are being compressed)
+-f = specify filename of archive (in this case archive.tar)
+
+xargs = takes items from STDIN and then executes whatever command is placed
+after it (default is echo). in this way, we can operate on anything streamed
+into xargs via pipe.
+
+but because xargs uses whitespace (newlines and spaces) as a delimiter, files
+with whitespace in their names will not be correctly parsed. we can bypass this
+issue with the flag -print0 if our xargs input is an output of find.

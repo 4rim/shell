@@ -3,8 +3,9 @@
 # Shell script that recursively finds most recently modified files in a
 # directory. Also lists all files by recency
 
-ls -Atl | awk '{print $9}' | awk 'FNR == 2 {print}'
+ls -RAtl | awk '{print $9}' | awk 'FNR == 2 {print}'
 # ls: 
+# -R = recursive search
 # -A = list all files except hidden ones (. and ..)
 # t = sort by time
 # l = include information like time of last modification
@@ -14,6 +15,6 @@ ls -Atl | awk '{print $9}' | awk 'FNR == 2 {print}'
 # just a blank line)
 
 
-ls -Atl | awk '{print $8, $9}'
+ls -RAtl | awk '{print $8, $9}'
 # simpler version of above command that prints out all file names and time last
 # modified

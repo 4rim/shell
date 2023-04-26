@@ -1,0 +1,15 @@
+Misc notes:
+
+source <.sh file>
+
+or 
+
+. <.sh file>
+
+lets you *run the script in the current shell*. 
+
+normally, just executing a shell script actually uses fork() under the hood to
+create a new clone of itself (called a child process). this is nice but it
+doesn't let us change our current directory, for example, which is what the
+marco/polo question asks us to do. 
+
